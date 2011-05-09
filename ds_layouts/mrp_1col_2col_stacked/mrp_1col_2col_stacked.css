@@ -1,0 +1,21 @@
+
+.ds-header {
+}
+
+.ds-top {
+
+}
+
+.ds-left {
+  float: left;
+  width: 50%;
+}
+
+.ds-right {
+  float: right;
+  width: 50%;
+}
+
+.ds-footer {
+  clear: both;
+}

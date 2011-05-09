@@ -1,0 +1,34 @@
+; $Id$
+
+name = MRP
+description = A subtheme based on the <a href="http://lessframework.com/" target="_blank">Less Framework</a>, an HTML5 Responsive Web Design Starter Theme for Drupal 7. This is an extension to the <a href="http://drupal.org/project/boron" target="_blank">Boron</a> theme, please remember to install it before building off of this theme.
+
+core = 7.x
+
+base theme = less_framework
+
+regions[sidebar_first] = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[content] = Content
+
+regions[header_firstcolumn] = Header first column
+regions[header_secondcolumn] = Header second column
+regions[header] = Header
+
+regions[highlighted] = Highlighted
+regions[help] = Help
+
+regions[footer_firstcolumn] = Footer first column
+regions[footer_secondcolumn] = Footer second column
+regions[footer_thirdcolumn] = Footer third column
+regions[footer_fourthcolumn] = Footer fourth column
+regions[footer] = Footer
+
+stylesheets[all][]    = css/mrp.css
+stylesheets[screen][] = css/layout.css
+stylesheets[screen][] = css/lf4.css
+stylesheets[screen][] = css/less-layout.css
+stylesheets[screen][] = css/10cols.css
+stylesheets[screen][] = css/8cols.css
+stylesheets[screen][] = css/3cols.css
+stylesheets[screen][] = css/5cols.css

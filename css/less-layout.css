@@ -1,0 +1,74 @@
+/* Less Framework 4 Overrides 
+   THIS FILE IS MEANT TO BE USED FOR GLOBAL DEFINITIONS ONLY
+   NO HEIGHTS, WIDTHS, PADDINGS OR MARGINS THAT WON'T BE APPLICABLE FOR ALL SCREEN RESOLUTIONS */
+body {
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x:hidden;
+}
+.section {
+  background-color: rgba(255,254,255,0.5);
+  margin: 0px;
+  padding: 10px;
+}
+nav#secondary-navigation.section {
+  background-color: transparent;
+  border: none;
+}
+#page-wrapper {
+  /* comment/uncomment below to hide/show grid */
+  background-color: #d5d5d5;
+  /* background-image: url(../images/grid.png); */
+  /*end grid*/
+  height: 100%;
+  position: relative;
+  top: -30px;
+}
+/* This is for skip-links above the header.
+   For Boron's "skip to navigation" link overriding look into *cols.css files */
+#skip-links a,
+#skip-links a:link,
+#skip-links a:visited,
+#skip-links a:hover {
+  height:1px;
+  left:0;
+  overflow:hidden;
+  position:absolute;
+  top:-500px;
+  width:1px;
+}
+#skip-links a:active,
+#skip-links a:focus {
+  position:static;
+  height:auto;
+  width:auto;
+}
+input.form-text {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/*	Typography overrides
+	------------------	*/
+.huge, h1 {
+  font-size: 32px;
+  letter-spacing: -1px;
+  line-height: 52px;
+}
+.large, h2 {
+  font-size: 24px;
+  line-height: 32px;
+}
+.big, h3 {
+  font-size: 16px;
+  line-height: 24px;
+}
+.normal, body {
+  font: 14px/24px Helvetica, Arial, sans-serif;
+}
+.small {
+  font-size: 10px;
+  line-height: 14px;
+}

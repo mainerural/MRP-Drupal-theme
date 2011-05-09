@@ -1,0 +1,57 @@
+.ds-top-left {
+  float: left;
+  width: 66%;
+}
+
+.ds-top-right {
+  float: right;
+  width: 33%;
+}
+
+.ds-middle-left {
+  float: left;
+  width: 33%;
+}
+
+.ds-middle-center {
+  float: left;
+  width: 33%;
+}
+
+.ds-middle-right {
+  float: right;
+  width: 33%;
+}
+
+.ds-bottom-left {
+  float: left;
+  width: 20%;
+}
+
+.ds-bottom-left-center {
+  float: left;
+  width: 20%;
+}
+
+.ds-bottom-center {
+  float: left;
+  width: 20%;
+}
+
+.ds-bottom-right-center {
+  float: left;
+  width: 20%;
+}
+
+.ds-bottom-right {
+  float: left;
+  width: 20%;
+}
+
+.ds-header {
+}
+
+
+.ds-footer {
+  clear: both;
+}

@@ -1,0 +1,150 @@
+/* Less Framework 4 Overrides 
+   THIS FILE IS FOR 10 COLUMNS LAYOUT DEFINITIONS ONLY
+   NO HEIGHTS, WIDTHS, PADDINGS OR MARGINS THAT WON'T BE APPLICABLE FOR 992px SCREEN RESOLUTION */
+	/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+	/*	Typography overrides
+	------------------	*/
+.huge,h1 {
+	font-size: 32px;
+	letter-spacing: -1px;
+	line-height: 52px;
+}
+
+.large,h2 {
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.big,h3 {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.normal,body {
+	font: 14px/ 24px Helvetica, Arial, sans-serif;
+}
+
+.small {
+	font-size: 10px;
+	line-height: 14px;
+}
+
+/* adjusting 10 columns layout
+	-----------------------------------	*/
+	/* Boron's Skip to navigation link 
+   For modifying skip-links above the header look into the less-layout.css file */
+p#skip-link {
+	position: absolute;
+	left: -9999px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+body.no-sidebars p#skip-link {
+	position: relative;
+	left: 0px;
+}
+
+body {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+body.two-sidebars div#content.column,body.one-sidebar div#content.column,body.one-sidebar.sidebar-second div#content.column,nav#navigation,body.one-sidebar aside#sidebar-first.column.sidebar,body.two-sidebars aside#sidebar-first.column.sidebar,body.one-sidebar aside#sidebar-second.column.sidebar,body.two-sidebars aside#sidebar-second.column.sidebar,footer#footer
+	{
+	float: left;
+	display: inline;
+	position: relative;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+body.two-sidebars div#content.column {
+	position: relative;
+	width: 552px;
+	top: 0px;
+	left: 172px;
+	padding-bottom: 80px;
+}
+
+/* left not 344px */
+body.one-sidebar div#content.column {
+	position: relative;
+	width: 552px;
+	top: 0px;
+	left: 0px;
+	padding-bottom: 80px;
+}
+
+body.one-sidebar.sidebar-second div#content.column {
+	position: relative;
+	width: 552px;
+	top: 0px;
+	left: 0px;
+	padding-bottom: 80px;
+}
+
+nav ul li {
+	list-style: none;
+	display: inline;
+}
+
+/* 334 to accomodate 1px rule at left */
+body.one-sidebar aside#sidebar-first.column.sidebar {
+	position: relative;
+	left: 0px;
+	width: 343px;
+	top: 0px;
+	padding-bottom: 78px;
+}
+
+body.two-sidebars aside#sidebar-first.column.sidebar {
+	position: relative;
+	left: -552px;
+	width: 172px;
+	top: 78px;
+	padding-bottom: 78px;
+}
+
+body.one-sidebar aside#sidebar-second.column.sidebar {
+	position: relative;
+	width: 344px;
+	top: 78px;
+	float: right;
+	padding-bottom: 78px;
+}
+
+body.two-sidebars aside#sidebar-second.column.sidebar {
+	position: relative;
+	width: 172px;
+	top: 77px;
+	float: right;
+	padding-bottom: 77px;
+}
+
+footer#footer {
+	position: relative;
+	width: 100%;
+}
+
+body.no-sidebars nav#navigation {
+	position: relative;
+	width: 100%;
+	left: 0px;
+}
+/* END Media Query for Default Layout: 992px. */

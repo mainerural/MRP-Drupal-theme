@@ -1,0 +1,110 @@
+
+/* Less Framework 4 Overrides 
+   THIS FILE IS FOR 8 COLUMNS LAYOUT DEFINITIONS ONLY
+   NO HEIGHTS, WIDTHS, PADDINGS OR MARGINS THAT WON'T BE APPLICABLE FOR 768px SCREEN RESOLUTION */
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+body {
+  padding: 48px 28px 60px;
+  width: 712px;
+}
+.huge, h1 {
+  font-size: 28px;
+  letter-spacing: -1px;
+  line-height: 34px;
+}
+.large, h2 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* adjusting 8 columns layout
+	-----------------------------------	*/	
+body.two-sidebars div#content.column,
+body.one-sidebar div#content.column,
+body.one-sidebar.sidebar-second div#content.column,
+nav#navigation,
+body.one-sidebar aside#sidebar-first.column.sidebar,
+body.two-sidebars aside#sidebar-first.column.sidebar,
+body.one-sidebar aside#sidebar-second.column.sidebar,
+body.two-sidebars aside#sidebar-second.column.sidebar,
+footer#footer {
+  float: left;
+  display: inline;
+  position: relative;
+}
+header#header {
+  position: relative;
+  width: 100%;
+}
+body.two-sidebars div#content.column {
+  position: relative;
+  width: 436px;
+  top: 80px;
+  left: 138px;
+  padding-bottom: 80px;
+}
+body.one-sidebar div#content.column {
+  position: relative;
+  width: 436px;
+  top: 80px;
+  left: 276px;
+  padding-bottom: 80px;
+}
+body.one-sidebar.sidebar-second div#content.column {
+  position: relative;
+  width: 436px;
+  top: 80px;
+  left: 0px;
+  padding-bottom: 80px;
+}
+nav#navigation {
+  position: absolute;
+  width: 100%;
+}
+body.one-sidebar aside#sidebar-first.column.sidebar {
+  position: relative;
+  left: -436px;
+  width: 276px;
+  top: 78px;
+  padding-bottom: 78px;
+}
+body.two-sidebars aside#sidebar-first.column.sidebar {
+  position: relative;
+  left: -436px;
+  width: 138px;
+  top: 78px;
+  padding-bottom: 78px;
+}
+body.one-sidebar aside#sidebar-second.column.sidebar {
+  position: relative;
+  width: 276px;
+  top: 78px;
+  float: right;
+  padding-bottom: 78px;
+ }
+body.two-sidebars aside#sidebar-second.column.sidebar {
+  position: relative;
+  width: 138px;
+  top: 77px;
+  float: right;
+  padding-bottom: 77px;
+ }
+footer#footer {
+  position: relative;
+  width: 100%;
+}
+nav#secondary-menu.links.clearfix {
+  position: relative;
+}
+
+} /* END Media Query for Tablet Layout: 768px. */
