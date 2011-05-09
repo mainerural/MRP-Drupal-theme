@@ -39,12 +39,8 @@
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
-  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1"/>
-  <!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
-  <!-- It effectively disables user-zooming, which is not good for accessibility -->
-  <!--There's a small Javascript-hack for fixing the scaling issue that could be used together with the above auto-zoom bug fix: http://www.blog.highub.com/mobile-2/a-fix-for-iphone-viewport-scale-bug/ -->
-  <!-- iOS Home Screen Logo-->
-  <link rel="apple-touch-icon" href="<?php print path_to_theme().'/images/apple-touch-icon.png'; ?>"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="apple-touch-icon-precomposed" href="<?php print path_to_theme().'/images/apple-touch-icon.png'; ?>"/>
   <?php print $scripts; ?>
 
 </head>
