@@ -16,10 +16,6 @@ nav#secondary-navigation.section {
   border: none;
 }
 #page-wrapper {
-  /* comment/uncomment below to hide/show grid */
-  background-color: #d5d5d5;
-  /* background-image: url(../images/grid.png); */
-  /*end grid*/
   height: 100%;
   position: relative;
   top: -30px;
