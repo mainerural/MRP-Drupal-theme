@@ -14,10 +14,7 @@ regions[sidebar_first] = Left sidebar
 regions[sidebar_second] = Right sidebar
 regions[content] = Content
 
-regions[header_firstcolumn] = Header first column
-regions[header_secondcolumn] = Header second column
 regions[header] = Header
-
 regions[highlighted] = Highlighted
 regions[help] = Help
 
@@ -26,7 +23,7 @@ regions[footer_secondcolumn] = Footer second column
 regions[footer_thirdcolumn] = Footer third column
 regions[footer_fourthcolumn] = Footer fourth column
 regions[footer_fifthcolumn] = Footer fifth column
-regions[footer] = Footer
+regions[footer] = Footer below columns
 
 stylesheets[all][]    = css/mrp.css
 stylesheets[screen][] = css/layout.css
