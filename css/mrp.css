@@ -1,9 +1,7 @@
 /* CSS for mrp subtheme */
 
 #header { 
-  position:absolute;
-  left:0;
-  top:78px;
+  background: #C8E5D4;
   width:100%;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -37,10 +35,6 @@ nav#navigation, nav#secondary-navigation {
   display: block;
   width: 100%;
   float: none;
-}
-
-nav#navigation { 
-	height: 4opx;
 }
 
 #secondary-navigation { 
@@ -103,13 +97,13 @@ nav#navigation {
 
 /* geometry */
 body {
-  padding-top: 65px;
+  padding-top: 0;
 }
 
 #page-wrapper {
     height: 100%;
     position: relative;
-    top: 92px;
+    top: 0;/*92px;*/
 }
 
 .region-footer-firstcolumn,

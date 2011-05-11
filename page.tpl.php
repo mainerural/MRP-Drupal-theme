@@ -68,6 +68,8 @@
  */
 ?>
 
+<div id="page-wrapper"><div id="page">
+
 
 <header id="header" role="banner">
 
@@ -106,15 +108,12 @@
 <?php endif; ?>
 
 <?php if ($secondary_menu): ?>
-  <nav id="secondary-navigation">
+  <nav id="secondary-navigation" role="navigation">
     <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'clearfix')))); ?>
   </nav> <!--/#navigation -->
 <?php endif; ?>
 
 </header> <!-- /.section, /#header -->
-
-<div id="page-wrapper"><div id="page">
-
 
 
 <div id="main-wrapper"><div id="main" class="clearfix<?php if ($main_menu) { print ' with-navigation'; } ?>">
