@@ -68,10 +68,10 @@
  */
 ?>
 
-<div id="page-wrapper"><div id="page">
+<div id="page">
 
 
-<header id="header" role="banner">
+<header id="banner" role="banner">
 
 <?php if ($logo): ?>
   <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
@@ -80,26 +80,18 @@
 <?php endif; ?>
 
 <?php if ($site_name || $site_slogan): ?>
-  <div id="name-and-slogan">
+  <hgroup id="name-and-slogan">
     <?php if ($site_name): ?>
-      <?php if ($title): ?>
-        <div id="site-name"><strong>
-          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-        </strong></div>
-      <?php else: /* Use h1 when the content title is empty */ ?>
-        <h1 id="site-name">
-          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-        </h1>
-      <?php endif; ?>
+      <h1 id="site-name">
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
+      </h1>
     <?php endif; ?>
 
     <?php if ($site_slogan): ?>
-      <div id="site-slogan"><?php print $site_slogan; ?></div>
+      <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
     <?php endif; ?>
-  </div> <!-- /#name-and-slogan -->
+  </hgroup> <!-- /#name-and-slogan -->
 <?php endif; ?>
-
-<?php print render($page['header']); ?>
 
 <?php if ($main_menu): ?>
   <nav id="navigation" role="navigation">
@@ -110,71 +102,78 @@
 <?php if ($secondary_menu): ?>
   <nav id="secondary-navigation" role="navigation">
     <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'clearfix')))); ?>
-  </nav> <!--/#navigation -->
+  </nav> <!--/#secondary-navigation -->
 <?php endif; ?>
+
+<?php print render($page['header']); ?>
 
 </header> <!-- /.section, /#header -->
 
 
-<div id="main-wrapper"><div id="main" class="clearfix<?php if ($main_menu) { print ' with-navigation'; } ?>">
+<div id="main" class="clearfix<?php if ($main_menu) { print ' with-navigation'; } ?>">
 
-<div id="content" class="column" role="main"><div class="section">
+<div id="content" class="column section" role="main">
   <?php if ($page['highlighted']): ?>
     <div id="highlighted"><?php print render($page['highlighted']); ?></div>
   <?php endif; ?>
-  <?php print $messages; ?>
+  <?php print render($page['help']); ?>
+
+  <?php if ($tabs): ?>
+    <nav class="tabs"><?php print render($tabs); ?></nav>
+  <?php endif; ?>
+
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>
     <h1 class="title" id="page-title"><?php print $title; ?></h1>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
-  <?php if ($tabs): ?>
-    <div class="tabs"><?php print render($tabs); ?></div>
-  <?php endif; ?>
-  <?php print render($page['help']); ?>
+
+  <?php print $messages; ?>
+
   <?php if ($action_links): ?>
     <ul class="action-links"><?php print render($action_links); ?></ul>
   <?php endif; ?>
+
   <?php print render($page['content']); ?>
+
   <?php print $feed_icons; ?>
-</div></div> <!-- /.section, /#content -->
+</div> <!-- /#content -->
 
 <?php if ($page['sidebar_first']): ?>
 
-  <aside id="sidebar-first" class="column sidebar" role="complementary"><div class="section">
+  <aside id="sidebar-first" class="column sidebar section" role="complementary">
     <?php print render($page['sidebar_first']); ?>
-  </div></aside> <!-- /.section, /#sidebar-first -->
+  </aside> <!-- /#sidebar-first -->
 <?php endif; ?>
 
 <?php if ($page['sidebar_second']): ?>
   <hr />
-  <aside id="sidebar-second" class="column sidebar" role="complementary"><div class="section">
+  <aside id="sidebar-second" class="column sidebar section" role="complementary">
     <?php print render($page['sidebar_second']); ?>
-  </div></aside> <!-- /.section, /#sidebar-second -->
+  </aside> <!-- /#sidebar-second -->
 <?php endif; ?>
 
-</div></div> <!-- /#main, /#main-wrapper -->
+</div> <!-- /#main -->
 
-<hr />
+  <footer id="footer" class="section">
 
-  <div id="footer-wrapper"><div class="section">
-
-    <?php if ($page['footer_firstcolumn'] || $page['footer_secondcolumn'] || $page['footer_thirdcolumn'] || $page['footer_fourthcolumn']): ?>
+    <?php if ($page['footer_firstcolumn'] || $page['footer_secondcolumn'] || $page['footer_thirdcolumn'] || $page['footer_fourthcolumn'] || $page['footer_fifthcolumn']): ?>
       <div id="footer-columns" class="clearfix">
         <?php print render($page['footer_firstcolumn']); ?>
         <?php print render($page['footer_secondcolumn']); ?>
         <?php print render($page['footer_thirdcolumn']); ?>
         <?php print render($page['footer_fourthcolumn']); ?>
+        <?php print render($page['footer_fifthcolumn']); ?>
       </div> <!-- /#footer-columns -->
     <?php endif; ?>
 
     <?php if ($page['footer']): ?>
-      <div id="footer" class="clearfix">
+      <div id="footer-fullwidth" class="clearfix">
         <?php print render($page['footer']); ?>
-      </div> <!-- /#footer -->
+      </div> <!-- /#footer-fullwidth -->
     <?php endif; ?>
 
-  </div></div> <!-- /.section, /#footer-wrapper -->
+  </footer> <!-- /#footer -->
 
 
-</div></div> <!-- /#page, /#page-wrapper -->
+</div> <!-- /#page -->

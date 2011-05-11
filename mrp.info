@@ -1,11 +1,14 @@
 ; $Id$
 
 name = MRP
-description = A subtheme based on the <a href="http://lessframework.com/" target="_blank">Less Framework</a>, an HTML5 Responsive Web Design Starter Theme for Drupal 7. This is an extension to the <a href="http://drupal.org/project/boron" target="_blank">Boron</a> theme, please remember to install it before building off of this theme.
+description = A theme for the Drupal website of Maine Rural Parthers.  This theme uses the <a href="http://lessframework.com/" target="_blank">Less Framework</a> grid.  It is a subtheme of <a href="http://drupal.org/project/boron" target="_blank">Boron</a>.
 
 core = 7.x
 
 base theme = boron
+
+regions_hidden[page_top] = Before header
+regions_hidden[page_bottom] = After footer
 
 regions[sidebar_first] = Left sidebar
 regions[sidebar_second] = Right sidebar
@@ -22,6 +25,7 @@ regions[footer_firstcolumn] = Footer first column
 regions[footer_secondcolumn] = Footer second column
 regions[footer_thirdcolumn] = Footer third column
 regions[footer_fourthcolumn] = Footer fourth column
+regions[footer_fifthcolumn] = Footer fifth column
 regions[footer] = Footer
 
 stylesheets[all][]    = css/mrp.css
@@ -32,3 +36,4 @@ stylesheets[screen][] = css/10cols.css
 stylesheets[screen][] = css/8cols.css
 stylesheets[screen][] = css/3cols.css
 stylesheets[screen][] = css/5cols.css
+
