@@ -12,12 +12,6 @@
     $middle_left         =  $variables['middle-left'];        
     $middle_center       =  $variables['middle-center'];       
     $middle_right        =  $variables['middle-right'];        
-                                                     
-    $bottom_left         =  $variables['bottom-left'];         
-    $bottom_left_center  =  $variables['bottom-left-center'];  
-    $bottom_center       =  $variables['bottom-center'];          
-    $bottom_right_center =  $variables['bottom-right-center']; 
-    $bottom_right        =  $variables['bottom-right-new'];       
 ?>  
 
   <?php if (isset($title_suffix['contextual_links'])): ?>
@@ -75,45 +69,6 @@
   <?php endif; ?>
 
   <?php if ($middle_left || $middle_left || $middle_right): ?>
-    </div>
-  <?php endif; ?>
-
-
-  <?php if ($bottom_left || $bottom_left_center || $bottom_center || $bottom_right_center || $bottom_right ): ?>
-    <div class="mrp_front_page_bottom">
-  <?php endif; ?>
-
-  <?php if ($bottom_left): ?>
-    <div class="ds-bottom-left"<?php print $bottom_left_classes; ?>">
-      <?php print $bottom_left; ?>
-    </div>
-  <?php endif; ?>
-
-  <?php if ($bottom_left_center): ?>
-    <div class="ds-bottom-left-center"<?php print $bottom_left_center_classes; ?>">
-      <?php print $bottom_left_center; ?>
-    </div>
-  <?php endif; ?>
-
-  <?php if ($bottom_center): ?>
-    <div class="ds-bottom-center"<?php print $bottom_center_classes; ?>">
-      <?php print $bottom_center; ?>
-    </div>
-  <?php endif; ?>
-
-  <?php if ($bottom_right_center): ?>
-    <div class="ds-bottom-right-center"<?php print $bottom_right_center_classes; ?>">
-      <?php print $bottom_right_center; ?>
-    </div>
-  <?php endif; ?>
-
-  <?php if ($bottom_right): ?>
-    <div class="ds-bottom-right"<?php print $bottom_right_classes; ?>">
-      <?php print $bottom_right; ?>
-    </div>
-  <?php endif; ?>
-
-  <?php if ($bottom_left || $bottom_left_center || $bottom_center || $bottom_right_center || $bottom_right ): ?>
     </div>
   <?php endif; ?>
 

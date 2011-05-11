@@ -5,7 +5,7 @@ description = A subtheme based on the <a href="http://lessframework.com/" target
 
 core = 7.x
 
-base theme = less_framework
+base theme = boron
 
 regions[sidebar_first] = Left sidebar
 regions[sidebar_second] = Right sidebar
