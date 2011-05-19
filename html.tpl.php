@@ -38,9 +38,10 @@
 <head>
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
+  <script type="text/javascript" src="/<?php print drupal_get_path('theme','boron'); ?>/scripts/html5.js"></script>
   <?php print $styles; ?>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel="apple-touch-icon-precomposed" href="<?php print path_to_theme().'/images/apple-touch-icon.png'; ?>"/>
+  <link rel="apple-touch-icon-precomposed" href="/<?php print path_to_theme().'/images/apple-touch-icon.png'; ?>"/>
 
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

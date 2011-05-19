@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/*
+	Less MRP by Lucas Sanders
+	Based on Less+ by Jimmy Rosén, http://www.angrycreative.se/projekt/less-framework
+	Less+ is based on Less Framework 4 by Joni Korpi, http://lessframework.com
+	MIT license - http://creativecommons.org/licenses/MIT/
+*/
+
+
+.gigantic {
+	font-size: 116px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge {
+	font-size: 72px;
+	line-height: 72px;
+	letter-spacing: -1px;
+}
+
+.large, h1 {
+	font-size: 44px;
+	line-height: 48px;
+}
+
+.bigger, h2 {
+	font-size: 28px;
+	line-height: 36px;
+}
+
+.big, h3 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.normal, h4 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+body {
+	font: 17px/24px Calibri, 'Helvetica Neue', Arial, sans-serif;
+}
+#main-menu {
+	font: 17px/24px Optima, 'Trebuchet MS', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}

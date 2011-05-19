@@ -70,7 +70,6 @@
 
 <div id="page">
 
-
 <header id="banner" role="banner">
 
 <?php if ($logo): ?>
@@ -93,16 +92,14 @@
   </hgroup> <!-- /#name-and-slogan -->
 <?php endif; ?>
 
-<?php if ($main_menu): ?>
+<?php if ($main_menu || $secondary_menu): ?>
   <nav id="navigation" role="navigation">
+  <?php if ($main_menu): ?>
     <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'clearfix')))); ?>
-  </nav> <!-- /#navigation -->
-<?php endif; ?>
-
-<?php if ($secondary_menu): ?>
-  <nav id="secondary-navigation" role="navigation">
+  <?php endif;  if ($secondary_menu): ?>
     <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'clearfix')))); ?>
-  </nav> <!--/#secondary-navigation -->
+  <?php endif; ?>
+  </nav> <!-- /#navigation -->
 <?php endif; ?>
 
 <?php print render($page['header']); ?>
@@ -140,14 +137,12 @@
 </div> <!-- /#content -->
 
 <?php if ($page['sidebar_first']): ?>
-
   <aside id="sidebar-first" class="column sidebar section" role="complementary">
     <?php print render($page['sidebar_first']); ?>
   </aside> <!-- /#sidebar-first -->
 <?php endif; ?>
 
 <?php if ($page['sidebar_second']): ?>
-  <hr />
   <aside id="sidebar-second" class="column sidebar section" role="complementary">
     <?php print render($page['sidebar_second']); ?>
   </aside> <!-- /#sidebar-second -->
@@ -174,6 +169,5 @@
     <?php endif; ?>
 
   </footer> <!-- /#footer -->
-
 
 </div> <!-- /#page -->

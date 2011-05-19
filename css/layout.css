@@ -1,1 +1,38 @@
-/* This file is for overriding the default Boron Theme CSS layout */
+@charset "UTF-8";
+/**
+
+Less MRP by Lucas Sanders
+Based on Less+ by Jimmy Rosén, http://www.angrycreative.se/projekt/less-framework
+Less+ is based on Less Framework 4 by Joni Korpi, http://lessframework.com
+MIT license - http://creativecommons.org/licenses/MIT/
+
+*//*
+
+Common styles for all layouts
+DO NOT specify any dimensions in this document
+
+**/
+html { background: #fff; }
+
+body { background: #e8e8e8; margin: 0 auto; /* Prevents Mobile Safari from bumping up font sizes in landscape */ -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: yellow; }
+
+::selection { background: #dddd66; }
+
+::-moz-selection { background: #dddd66; }
+
+img::selection { background: transparent; }
+
+img::-moz-selection { background: transparent; }
+
+a { text-decoration: none; }
+a:hover, a:focus { text-decoration: underline; }
+
+body.front .programs nav ul li { list-style: square inside; }
+
+#toolbar {   /* lighten up the shadow on Drupal’s administrative toolbar */
+    -moz-box-shadow: 0 0 10px #222;
+    -webkit-box-shadow: 0 0 10px #222;
+    box-shadow: 0 0 10px #222;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#222222, direction='180', strength='4');
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color=#222222, direction='180', strength='4')";
+}

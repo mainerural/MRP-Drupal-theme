@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/**
+
+Less MRP by Lucas Sanders
+Based on Less+ by Jimmy Rosén, http://www.angrycreative.se/projekt/less-framework
+Less+ is based on Less Framework 4 by Joni Korpi, http://lessframework.com
+MIT license - http://creativecommons.org/licenses/MIT/
+
+*//*
+
+Common styles for all layouts
+DO NOT specify any dimensions in this document
+
+**/
+
+$green: #00853f;
+$gray: #7f7f7f;
+$yellow: #dd6;
+
+
+html {
+	background: #fff;
+}
+
+body {
+	background: #e8e8e8;
+	margin: 0 auto;
+	
+	/* Prevents Mobile Safari from bumping up font sizes in landscape */
+	-webkit-text-size-adjust: 100%; 
+	-webkit-tap-highlight-color: rgb(255,255,0);
+}
+
+::selection         { background: $yellow; }
+::-moz-selection    { background: $yellow; }
+img::selection 	    { background: transparent; }
+img::-moz-selection { background: transparent; }
+
+a {
+    text-decoration: none;
+    
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}
+
+header[role="banner"] {
+    
+}
+div#lead {
+    
+}
+footer#sitemap {
+    
+    hgroup.logo {}
+    .affiliations {}
+    .navigation {
+        ul {
+            li {
+                ul {
+                    li {
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+body.front {   // home page
+    .programs {
+        
+        .energy {}
+        .inspireme {}
+        .legacy {}
+        nav ul {
+            li {
+                list-style: square inside;
+            }
+        }
+    }
+}

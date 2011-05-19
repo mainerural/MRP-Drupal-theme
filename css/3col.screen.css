@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/**
+
+Less MRP by Lucas Sanders
+Based on Less+ by Jimmy Rosén, http://www.angrycreative.se/projekt/less-framework
+Less+ is based on Less Framework 4 by Joni Korpi, http://lessframework.com
+MIT license - http://creativecommons.org/licenses/MIT/
+
+*/
+  /*
+
+3-column mobile layout
+Inherits styles from 10-column screen layout
+68px columns, 24px gutters, 34px+ margins, 320px total
+------------------------------------------------------
+1     2      3
+68px  160px  252px
+
+**/
+@media only screen and (max-width: 767px) { body { width: 252px; padding: 0 0 60px; } }

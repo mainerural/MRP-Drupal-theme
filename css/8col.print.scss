@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/**
+
+Less MRP by Lucas Sanders
+MIT license - http://creativecommons.org/licenses/MIT/
+
+*//*
+
+8-column portrait print layout 
+45pt/.625in columns, 18pt/.25in gutters
+Inherits common styles only
+-----------------------------------------------------
+1     2      3      4      5      6      7      8    
+45pt  120pt  189pt  258pt  327pt  396pt  465pt  534pt
+
+**/
+
+body {
+	width: 672pt;
+	padding: 36pt 0;
+}
+
+header[role="banner"] {
+    
+}
+div#lead {
+
+}
+footer#sitemap {
+    hgroup.logo {}
+    .affiliations {}
+    .navigation {
+        ul {
+            li {
+                ul {
+                    li {
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.home {
+    .programs {
+        .energy {}
+        .inspireme {}
+        .legacy {}
+    }
+}

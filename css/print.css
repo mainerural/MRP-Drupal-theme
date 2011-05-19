@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/**
+
+Less MRP by Lucas Sanders
+MIT license - http://creativecommons.org/licenses/MIT/
+
+*/
+  /*
+
+Common styles for all print layouts
+DO NOT specify any dimensions in this document
+
+**/
+body { background: #fff; }
+
+::selection { background: transparent; }
+
+::-moz-selection { background: transparent; }

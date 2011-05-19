@@ -25,12 +25,13 @@ regions[footer_fourthcolumn] = Footer fourth column
 regions[footer_fifthcolumn] = Footer fifth column
 regions[footer] = Footer below columns
 
-stylesheets[all][]    = css/mrp.css
-stylesheets[screen][] = css/layout.css
-stylesheets[screen][] = css/lf4.css
-stylesheets[screen][] = css/less-layout.css
-stylesheets[screen][] = css/10cols.css
-stylesheets[screen][] = css/8cols.css
-stylesheets[screen][] = css/3cols.css
-stylesheets[screen][] = css/5cols.css
+stylesheets[all][]    = css/reset.css
+stylesheets[all][]    = css/fonts.css
+stylesheets[all][]    = css/layout.css
+stylesheets[screen][] = css/10col.screen.css
+;stylesheets[screen][] = css/8col.screen.css
+;stylesheets[screen][] = css/3col.screen.css
+;stylesheets[screen][] = css/5col.screen.css
+;stylesheets[print][]  = css/8col.print.css
+;stylesheets[print][]  = css/10col.print.css
 

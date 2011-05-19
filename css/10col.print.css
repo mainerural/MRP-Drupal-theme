@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/**
+
+Less MRP by Lucas Sanders
+MIT license - http://creativecommons.org/licenses/MIT/
+
+*/
+  /*
+
+10-column landscape print layout 
+45pt/.625in columns, 18pt/.25in gutters
+Inherits styles from 8-column print layout
+-------------------------------------------------------------------
+1     2      3      4      5      6      7      8      9      10
+51pt  120pt  189pt  258pt  327pt  396pt  465pt  534pt  603pt  672pt
+
+**/
+@media only print and (min-width: 744pt) { body { width: 672pt; } }
